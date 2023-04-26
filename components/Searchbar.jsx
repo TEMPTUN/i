@@ -3,9 +3,7 @@ import style from '../styles/Searchbar.module.scss'
 
 const Searchbar = () => {
   const [search, setSearch] = React.useState('')
-  const [searchResults, setSearchResults] = React.useState([])
   const get=()=>{
-    localStorage.setItem('search', search)
     setSearch('')
   }
   return (
